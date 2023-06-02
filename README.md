@@ -412,6 +412,7 @@ Available Commands:
   compactdb           Create a copy of a channel.db file in safe/read-only mode
   deletepayments      Remove all (failed) payments from a channel DB
   derivekey           Derive a key with a specific derivation path
+  doublespendinputs   Tries to double spend the given inputs by deriving the private for the address and sweeping the funds to the given address. This can only be used with inputs that belong to an lnd wallet.
   dropchannelgraph    Remove all graph related data from a channel DB
   dumpbackup          Dump the content of a channel.backup file
   dumpchannels        Dump all channel information from an lnd channel database
@@ -468,6 +469,7 @@ Legend:
 | [compactdb](doc/chantools_compactdb.md)                     | Run database compaction manually to reclaim space                                                                                        |
 | [deletepayments](doc/chantools_deletepayments.md)           | Remove ALL payments from a `channel.db` file to reduce size                                                                              |
 | [derivekey](doc/chantools_derivekey.md)                     | :pencil: Derive a single private/public key from `lnd`'s seed, use to test seed                                                          |
+| [doublespendinputs](doc/chantools_doublespendinputs.md)     | :pencil: Tries to double spend the given inputs by deriving the private for the address and sweeping the funds to the given address                                |
 | [dropchannelgraph](doc/chantools_dropchannelgraph.md)       | (:warning:) Completely drop the channel graph from a `channel.db` to force re-sync                                                       |
 | [dumpbackup](doc/chantools_dumpbackup.md)                   | :pencil: Show the content of a `channel.backup` file as text                                                                             |
 | [dumpchannels](doc/chantools_dumpchannels.md)               | Show the content of a `channel.db` file as text                                                                                          |
